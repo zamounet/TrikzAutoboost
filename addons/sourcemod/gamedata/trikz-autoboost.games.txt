@@ -1,0 +1,43 @@
+"Games"
+{	
+	"cstrike"
+	{
+		
+		"Offsets"
+		{
+			"TELimitSize"
+			{
+				"windows"		"4"
+				"linux"			"4"
+			}
+		}
+		
+		"Addresses"
+		{
+			"TELimit"
+            {
+                "linux"
+                {
+                    "signature" "CBaseServer::WriteTempEntities"
+					"offset"	"400"
+                }
+				
+				"windows"
+                {
+                    "signature" "CBaseServer::WriteTempEntities"
+					"offset"	"261"
+                }
+            }
+		}
+		
+		"Signatures"
+		{
+			"CBaseServer::WriteTempEntities"
+			{
+				"library"		"engine"
+				"linux"			"@_ZN11CBaseServer17WriteTempEntitiesEP11CBaseClientP14CFrameSnapshotS3_R8bf_writei"
+				"windows"		"\x55\x8B\xEC\xB8\x94\x65\x04\x00"
+			}
+		}
+	}
+}
