@@ -60,6 +60,7 @@ int gI_other[MAXPLAYERS + 1];
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
 {   
     CreateNative("BoostFix_BoostClient", Native_BoostClient);
+    RegPluginLibrary("boost-fix");
 }
 
 bool IsValidClient(int client, bool alive = false)
